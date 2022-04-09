@@ -4,13 +4,25 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2022/04/05/hello-world/"/>
-      <url>/2022/04/05/hello-world/</url>
+      <title>Ryujinx-CN更新日志</title>
+      <link href="/2022/04/09/ryujinx-cn-changelog/"/>
+      <url>/2022/04/09/ryujinx-cn-changelog/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="下载方式"><a href="#下载方式" class="headerlink" title="下载方式"></a>下载方式</h1><h2 id="通过Github下载"><a href="#通过Github下载" class="headerlink" title="通过Github下载"></a>通过Github下载</h2><p>进入<a href="https://github.com/redball1017/Ryujinx-CN/releases/latest">Repo Releases</a>链接后，点击适用于您系统架构的文件即可</p><table><thead><tr><th>文件名(版本号用x.x.xx表示)</th><th>适用架构</th></tr></thead><tbody><tr><td>ryujinx-x.x.xx-linux_x64.tar.gz</td><td>64位linux</td></tr><tr><td>ryujinx-x.x.xx-win_x64.zip</td><td>64位Windows</td></tr><tr><td>ryujinx-headless-sdl2-x.x.xx-linux_x64.tar.gz</td><td>仅供调试用,64位linux</td></tr><tr><td>ryujinx-headless-sdl2-x.x.xx-win_x64.zip</td><td>仅供调试用,64位Windows</td></tr><tr><td>Source code</td><td>源代码，windows用户推荐下载zip,linux用户推荐下载.tar.gz(仅供调试用)</td></tr></tbody></table><h2 id="通过Fastgit下载"><a href="#通过Fastgit下载" class="headerlink" title="通过Fastgit下载"></a>通过Fastgit下载</h2><p>Fastgit是Github的一个镜像网站，你可以浏览<a href="https://hub.fastgit.xyz/redball1017/Ryujinx-CN/releases">此链接</a>来下载Ryujinx-CN</p><h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="v1-1-52"><a href="#v1-1-52" class="headerlink" title="v1.1.52"></a>v1.1.52</h2><h3 id="添加"><a href="#添加" class="headerlink" title="添加:"></a>添加:</h3><p>amadeus: 更新到REV11.</p><ul><li><p>这实现了从新的 14.0.0 固件更新到 REV11 的所有 ABI 更改。</p></li><li><p>据我们所知，目前 Nintendo Switch 上没有游戏使用这些新功能，但未来的游戏可能会。</p><p>实施 VMAD 着色器指令并改进 InvocationInfo 和 ISBERD 处理。</p><p>修复了使用 Nouveau OpenGL 和几何或曲面细分着色器的自制软件。 商业游戏没有已知的变化。</p><h3 id="修复"><a href="#修复" class="headerlink" title="修复:"></a>修复:</h3><ul><li><p>允许复制纹理视图具有不匹配的多重采样状态。</p><ul><li><p>修复 Pinball FX3 中的黑屏。</p></li><li><p>Lop3Expression：优化表达式。</p><ul><li><p>游戏中没有预期的变化。</p><ul><li><p>根据索引缓冲区类型计算顶点缓冲区大小。</p><ul><li><p>防止 Super Mario 64 (SM3DAS) 和 Perky Little Things 出现内存不足错误和崩溃。 请注意，这些游戏需要更多修复才能运行。</p></li><li><p>amadeus：改进和修复延迟效果处理。</p><ul><li>重做声音延迟效果处理并清理代码。</li><li>修复了环绕声代码中的错误。 游戏中没有已知的变化。</li></ul></li></ul></li></ul></li></ul></li><li><p>HID：AcquireNpadStyleSetUpdateEventHandle 上的信号事件。</p><ul><li><p>修复了 Flip Wars 上的随机控制器断开连接。</p></li><li><p>LibHac：更新到 0.16.1。</p><ul><li><p>当 EnsureApplicationSaveData 尝试创建一个已经存在的临时存储时，不要失败。 应该允许 NSO 标题再次启动。</p></li><li><p>支持读取包含初始数据/关键区域的 XCI 文件。</p></li><li><p>为系统版本 14.0.0 添加关键源</p><h3 id="更改"><a href="#更改" class="headerlink" title="更改:"></a>更改:</h3><ul><li>删除保存数据创建提示。<ul><li>现在将自动创建保存数据目录并记录在控制台中。</li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> 更新日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ryujinx-CN </tag>
+            
+        </tags>
       
     </entry>
     
