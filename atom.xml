@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-09T06:41:26.478Z</updated>
+  <updated>2022-04-15T15:22:05.912Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>将你的企业版office升级到预览体验版本，2022最新教程</title>
+    <link href="http://example.com/2022/04/15/office-upgrade-beta/"/>
+    <id>http://example.com/2022/04/15/office-upgrade-beta/</id>
+    <published>2022-04-15T11:29:04.000Z</published>
+    <updated>2022-04-15T15:22:05.912Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;相信大家多多少少都有白嫖过Office</summary>
+        
+      
+    
+    
+    
+    
+    <category term="office" scheme="http://example.com/tags/office/"/>
+    
+  </entry>
   
   <entry>
     <title>Ryujinx-CN更新日志</title>

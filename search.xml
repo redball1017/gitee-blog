@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>将你的企业版office升级到预览体验版本，2022最新教程</title>
+      <link href="/2022/04/15/office-upgrade-beta/"/>
+      <url>/2022/04/15/office-upgrade-beta/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>相信大家多多少少都有白嫖过Office 365的企业版订阅(例如微软官方免费的Office开发人员订阅)吧，由于这种office的订阅是没有加入预览体验计划的按键的，所以很多想体验预览体验版本的人就止步于此了。其实微软官方已经出了关于此类Office 365订阅升级预览体验版本的详细方法的，那么就跟我来试试看吧!</p><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>原文:<a href="https://insider.office.com/zh-cn/business/deploy/windows/office-deployment-tool">M365 admins: Use ODT to deploy builds | Office Insider</a></p><h2 id="正常安装"><a href="#正常安装" class="headerlink" title="正常安装"></a>正常安装</h2><p>首先我们先下载<a href="https://www.microsoft.com/en-us/download/confirmation.aspx?id=49117">Office部署工具</a></p><p>然后我们同意一下许可协议然后点击”Continue”</p><p><img src="https://red-snowflake-b62e.redball1017.workers.dev/images/office-upgrade-beta/image1.png"></p><p>然后选择一个文件夹来解压Office 部署工具。</p><p>然后在解压有Office部署工具的文件夹中新建一个.xml文件，文件名随意，然后双击打开这个xml文件。输入以下片段(选其一输入即可)</p><h3 id="当前频道（预览）内部版本："><a href="#当前频道（预览）内部版本：" class="headerlink" title="当前频道（预览）内部版本："></a>当前频道（预览）内部版本：</h3><figure class="highlight xml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Configuration</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">Add</span> <span class="attr">OfficeClientEdition</span>=<span class="string">"64"</span> <span class="attr">Channel</span>=<span class="string">"CurrentPreview"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">Product</span> <span class="attr">ID</span>=<span class="string">"O365ProPlusRetail"</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="name">Language</span> <span class="attr">ID</span>=<span class="string">"zh-cn"</span>/&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">Product</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">Add</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">Configuration</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure><h3 id="Beta-版频道内部版本"><a href="#Beta-版频道内部版本" class="headerlink" title="Beta 版频道内部版本:"></a>Beta 版频道内部版本:</h3><figure class="highlight xml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">Add</span> <span class="attr">OfficeClientEdition</span>=<span class="string">"64"</span> <span class="attr">Channel</span>=<span class="string">"BetaChannel"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">Product</span> <span class="attr">ID</span>=<span class="string">"O365ProPlusRetail"</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">Language</span> <span class="attr">ID</span>=<span class="string">"zh-cn"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Product</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Add</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Configuration</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><p>然后保存文件。然后在刚刚的文件夹中按Shift+右键，然后点击”在此处打开命令窗口”</p><p><img src="https://red-snowflake-b62e.redball1017.workers.dev/images/office-upgrade-beta/image2.png"></p><p>然后输入以下命令</p><p><code>.\setup.exe /configure 你刚刚输入的xml文件的文件名及完整后缀</code></p><p>比如我的就是</p><p><code>.\setup.exe /configure Install-Beta-Version.xml</code></p><p>然后按回车键就会开始安装</p><h2 id="快速安装"><a href="#快速安装" class="headerlink" title="快速安装"></a>快速安装</h2><p>点<a href="https://red-snowflake-b62e.redball1017.workers.dev/Assets/office/Deploy%20Tools.7z">我</a>下载安装所需文件</p><p>下载好之后解压到一个空文件夹中，然后进入该文件夹，点击你想要安装的预览体验版本即可</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> office </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Ryujinx-CN更新日志</title>
       <link href="/2022/04/09/ryujinx-cn-changelog/"/>
       <url>/2022/04/09/ryujinx-cn-changelog/</url>
